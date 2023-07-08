@@ -20,4 +20,5 @@ items:
     name: 00uaa44tsuBkHrNXw5d7
   identity:
     name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
-
+kind: List
+metadata: {}
