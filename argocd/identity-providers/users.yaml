@@ -1,4 +1,6 @@
 apiVersion: user.openshift.io/v1
 kind: User
+annotations:
+  argocd.argoproj.io/sync-options: Prune=false
 metadata:
   name: 00uaa44tsuBkHrNXw5d7
