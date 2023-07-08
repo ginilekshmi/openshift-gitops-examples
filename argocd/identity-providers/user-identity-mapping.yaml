@@ -14,5 +14,13 @@ items:
   providerUserName: 00uaa44tsuBkHrNXw5d7
   user:
     name: 00uaa44tsuBkHrNXw5d7
+- apiVersion: user.openshift.io/v1
+  kind: UserIdentityMapping
+  metadata:
+    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+  user: 
+    name: 00uaa44tsuBkHrNXw5d7
+  identity:
+    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
 kind: List
 metadata: {}
