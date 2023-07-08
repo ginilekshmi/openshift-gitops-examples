@@ -1,35 +1,21 @@
-apiVersion: v1
-items:
-- apiVersion: user.openshift.io/v1
-  fullName: Ginilekshmi A O
-  identities:
-  - gio-openid-idp:00uaa44tsuBkHrNXw5d7
-  kind: User
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-options: Validate=false
-    name: 00uaa44tsuBkHrNXw5d7
-- apiVersion: user.openshift.io/v1
-  extra:
-    email: gio@redhat.com
-    name: 00uaa44tsuBkHrNXw5d7
-    preferred_username: 00uaa44tsuBkHrNXw5d7
-  kind: Identity
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-options: Validate=false
-    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
-  providerName: gio-openid-idp
-  providerUserName: 00uaa44tsuBkHrNXw5d7
-- apiVersion: user.openshift.io/v1
-  identity:
-    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
-  kind: UserIdentityMapping
-  metadata:
-    annotations:
-      argocd.argoproj.io/sync-options: Replace=true
-    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
-  user: 00uaa44tsuBkHrNXw5d7
-    name: 
-kind: List
-metadata: {}
+apiVersion: user.openshift.io/v1
+kind: User
+identities:
+- gio-openid-idp:00uaa44tsuBkHrNXw5d7
+metadata:
+  name: 00uaa44tsuBkHrNXw5d7
+kind: Identity
+metadata:
+  name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+providerName: gio-openid-idp
+providerUserName: 00uaa44tsuBkHrNXw5d7
+user:
+  name: 00uaa44tsuBkHrNXw5d7
+kind: UserIdentityMapping
+metadata:
+  name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+user: 
+  name: 00uaa44tsuBkHrNXw5d7
+identity:
+  name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+
