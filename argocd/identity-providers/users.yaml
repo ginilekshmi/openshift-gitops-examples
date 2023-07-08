@@ -1,6 +1,7 @@
 ---
 apiVersion: user.openshift.io/v1
 kind: User
+groups: null
 metadata:
   name: 00uaa44tsuBkHrNXw5d7
   annotations:
