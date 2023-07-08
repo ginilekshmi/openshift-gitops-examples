@@ -2,6 +2,8 @@
 apiVersion: user.openshift.io/v1
 kind: User
 groups: null
+identities:
+- gio-openid-idp:00uaa44tsuBkHrNXw5d7
 metadata:
   name: 00uaa44tsuBkHrNXw5d7
   annotations:
