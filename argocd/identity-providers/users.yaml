@@ -1,7 +1,27 @@
 ---
-apiVersion: user.openshift.io/v1
-kind: User
-metadata:
-  name: 00uaa44tsuBkHrNXw5d7
-  annotations:
-    argocd.argoproj.io/sync-options: Prune=false
+apiVersion: v1
+items:
+- apiVersion: user.openshift.io/v1
+  kind: User
+  identities:
+  - gio-openid-idp:00uaa44tsuBkHrNXw5d7
+  metadata:
+    name: 00uaa44tsuBkHrNXw5d7
+- apiVersion: user.openshift.io/v1
+  kind: Identity
+  metadata:
+    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+  providerName: gio-openid-idp
+  providerUserName: 00uaa44tsuBkHrNXw5d7
+  user:
+    name: 00uaa44tsuBkHrNXw5d7
+- apiVersion: user.openshift.io/v1
+  kind: UserIdentityMapping
+  metadata:
+    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+  user: 
+    name: 00uaa44tsuBkHrNXw5d7
+  identity:
+    name: gio-openid-idp:00uaa44tsuBkHrNXw5d7
+kind: List
+metadata: {}
